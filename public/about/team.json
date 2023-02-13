@@ -2,7 +2,7 @@
     { 
         "name": "Dr. Mahamadou TOURÉ", 
         "headline": "Directeur Général, CEO", 
-        "image": "/assets/img/team/01.jpeg",
+        "image": "assets/img/team/01.jpeg",
         "description": "Magni qui quod omnis unde et eos fuga et exercitationem. Odio veritatis perspiciatis quaerat qui aut aut aut",
         "socials": [
             {"type": "twitter", "link": "#"},
@@ -14,7 +14,7 @@
     { 
         "name": "Aimé MALONGA", 
         "headline": "Administrateur", 
-        "image": "/assets/img/team/02.jpeg",
+        "image": "assets/img/team/02.jpeg",
         "description": "Magni qui quod omnis unde et eos fuga et exercitationem. Odio veritatis perspiciatis quaerat qui aut aut aut",
         "socials": [
             {"type": "twitter", "link": "#"},
@@ -26,7 +26,7 @@
     { 
         "name": "Daniel DEMERS", 
         "headline": "Administrateur", 
-        "image": "/assets/img/team/03.jpeg",
+        "image": "assets/img/team/03.jpeg",
         "description": "Magni qui quod omnis unde et eos fuga et exercitationem. Odio veritatis perspiciatis quaerat qui aut aut aut",
         "socials": [
             {"type": "twitter", "link": "#"},
@@ -38,7 +38,7 @@
     { 
         "name": "Ibrahima COLY", 
         "headline": "Administrateur", 
-        "image": "/assets/img/team/04.jpeg",
+        "image": "assets/img/team/04.jpeg",
         "description": "Magni qui quod omnis unde et eos fuga et exercitationem. Odio veritatis perspiciatis quaerat qui aut aut aut",
         "socials": [
             {"type": "twitter", "link": "#"},
@@ -50,7 +50,7 @@
     { 
         "name": "Aichatou TOURÉ", 
         "headline": "Administrateur", 
-        "image": "/assets/img/team/05.jpeg",
+        "image": "assets/img/team/05.jpeg",
         "description": "Magni qui quod omnis unde et eos fuga et exercitationem. Odio veritatis perspiciatis quaerat qui aut aut aut",
         "socials": [
             {"type": "twitter", "link": "#"},
