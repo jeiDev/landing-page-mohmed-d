@@ -58,7 +58,7 @@ function getTeam(){
            }
         }
     };
-    xhttp.open("GET", "/public/about/team.json", true)
+    xhttp.open("GET", "public/about/team.json", true)
     xhttp.send()
 }
 
@@ -84,7 +84,7 @@ function getProgram(){
            }
         }
     };
-    xhttp.open("GET", "/public/about/program.json", true)
+    xhttp.open("GET", "public/about/program.json", true)
     xhttp.send()
 }
 
