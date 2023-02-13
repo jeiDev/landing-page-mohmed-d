@@ -1,3 +1,7 @@
+.team{
+    padding-top: 50px!important;
+}
+
 /*--------------------------------------------------------------
 # program Section
 --------------------------------------------------------------*/
@@ -49,6 +53,11 @@
 .program-info h2{
     font-size: 5em;
     padding-bottom: 40px
+}
+
+.text-info-f{
+    font-size: 1.4em;
+    color: rgba(0,0,0,.5);
 }
 
 

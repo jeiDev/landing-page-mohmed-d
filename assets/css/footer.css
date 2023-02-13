@@ -162,6 +162,19 @@
     cursor: pointer;
 }
 
+.content-info.order-lg-last{
+    padding-left: 100px;
+}
+
+.content-info.order-lg-first{
+    padding-right: 100px;
+}
+
+.about-content img {
+    filter: grayscale(1);
+}
+
+
 @media only screen and (max-width: 500px) {
     .box-newsletter{
         text-align: center;

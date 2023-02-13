@@ -41,7 +41,7 @@ function drawTeam(item) {
         </div>
     `
 
-    parent.appendChild(box)
+    parentTeam.appendChild(box)
 
 }
 
@@ -89,5 +89,6 @@ function getProgram(){
 }
 
 document.addEventListener("DOMContentLoaded", () => {
+    getTeam()
     getProgram()
 })
