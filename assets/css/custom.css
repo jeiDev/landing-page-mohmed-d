@@ -1,0 +1,44 @@
+.box-call a{
+    color: rgba(255, 255, 255, 0.6);
+    cursor: pointer;
+}
+
+.box-call a:hover{
+    color: #ffde67;
+}
+
+.hero{
+    padding-bottom: 150px!important;
+}
+
+.hero .title-home{
+    font-size: 4.5em;
+    padding-top: 100px;
+}
+
+.text-home{
+    font-size: 1.3em!important;
+}
+
+.box-button-welcome{
+    display: flex;
+    flex-direction: flex-start;
+}
+
+.button-welcome{
+    padding: 26px 80px;
+    background-color: #ffde67;
+    color: black;
+    font-weight: bold;
+    border-radius: 10px;
+    transition: all ease .5s;
+}
+
+.button-welcome:hover{
+    background-color: black;
+    color: white;
+}
+
+/*******************************************************************
+** 
+*******************************************************************/
