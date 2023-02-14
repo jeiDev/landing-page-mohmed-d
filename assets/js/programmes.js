@@ -57,7 +57,6 @@ function getData() {
     get("public/programmes/programess.json", (res) => {
         if (!res) return
         data = res.coutries
-        console.log({ res })
         drawListPrograme()
 
     })
