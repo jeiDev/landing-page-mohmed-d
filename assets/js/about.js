@@ -1,6 +1,8 @@
 const parentTeam = document.getElementById("team-main")
 const parentProgram = document.getElementById("program")
 const parentPropos = document.getElementById("propos")
+const titleBanner = document.getElementById("title-banner")
+const descriptionBanner = document.getElementById("description-banner")
 
 /**
  * @typedef {Object} Social
@@ -115,8 +117,21 @@ function getPropos(){
     })
 }
 
+function drawInfoBanner(data){
+    titleBanner.innerText = data.title
+    descriptionBanner.innerText = data.description
+}
+
+function getInfoBanner(){
+    get("public/about/banner.json", res => {
+        if(!res) return 
+        drawInfoBanner(res)
+    })
+}
+
 document.addEventListener("DOMContentLoaded", () => {
     getTeam()
     getProgram()
     getPropos()
+    getInfoBanner()
 })
