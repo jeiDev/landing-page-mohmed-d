@@ -1,5 +1,6 @@
 const parentTeam = document.getElementById("team-main")
 const parentProgram = document.getElementById("program")
+const parentPropos = document.getElementById("propos")
 
 /**
  * @typedef {Object} Social
@@ -45,21 +46,13 @@ function drawTeam(item) {
 
 }
 
-function getTeam(){
-    var xhttp = new XMLHttpRequest();
-    xhttp.onreadystatechange = function() {
-        if (this.readyState == 4 && this.status == 200) {
-           try {
-                JSON.parse(this.responseText).forEach(item => {
-                    drawTeam(item)
-                })
-           } catch (error) {
-                console.error("Could not parse data", error)
-           }
-        }
-    };
-    xhttp.open("GET", "public/about/team.json", true)
-    xhttp.send()
+
+
+async function getTeam(){
+    get("public/about/team.json", res => {
+        if(!res) return
+        res.forEach(item => (drawTeam(item)))
+    })
 }
 
 
@@ -73,22 +66,57 @@ function drawProgram(data){
     button.innerText = data.button.title
 }
 
-function getProgram(){
-    var xhttp = new XMLHttpRequest();
-    xhttp.onreadystatechange = function() {
-        if (this.readyState == 4 && this.status == 200) {
-           try {
-                drawProgram(JSON.parse(this.responseText))
-           } catch (error) {
-                console.error("Could not parse data", error)
-           }
-        }
-    };
-    xhttp.open("GET", "public/about/program.json", true)
-    xhttp.send()
+async function getProgram(){
+    get("public/about/program.json", res => {
+        if(!res) return 
+        drawProgram(res)
+    })
+}
+
+function drawPropos(data){
+    let el = document.createElement("section")
+
+    el.classList.add("about")
+
+    el.innerHTML = `
+        <div class="container about-content">
+            <div class="row gy-4">
+            <div class="col-lg-6 position-relative align-self-start order-lg-last order-first">
+                <img src="${data.image}" class="img-fluid" alt="">
+            </div>
+            <div class="col-lg-6 content content-info ${data.position == 'left' ? 'order-last order-lg-first' : 'order-last order-lg-last'}">
+                <h6>À PROPOS</h6>
+                <h3>${data.title}</h3>
+                <p>${data.description}</p>
+                <a href="${data.button.link}" class="readmore stretched-link">
+                <span>${data.button.title}</span>
+                <i class="bi bi-arrow-right"></i>
+                </a>
+                ${data.items ? (`
+                    <ul>
+                       ${data.items.map(item => (`
+                        <li><i class="bi bi-check"></i> ${item}</li>
+                       `)).join("")}
+                    </ul>
+                `) : ""}
+                
+            </div>
+            </div>
+        </div>
+    `
+
+    parentPropos.appendChild(el)
+}
+
+function getPropos(){
+    get("public/about/propos.json", res => {
+        if(!res) return 
+        res.forEach(item => (drawPropos(item)))
+    })
 }
 
 document.addEventListener("DOMContentLoaded", () => {
     getTeam()
     getProgram()
+    getPropos()
 })

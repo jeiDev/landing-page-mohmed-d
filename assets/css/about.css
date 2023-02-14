@@ -22,19 +22,24 @@
 }
 
 .program-info .button-n {
-    background-color: #ffde67;
-    color: black;
-    padding: 20px 55px;
-    border-radius: 50px;
-    font-weight: bold;
-    cursor: pointer;
+    font-family: var(--font-primary);
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 12px 40px;
+    border-radius: 5px;
+    transition: 0.5s;
+    margin: 10px;
+    border: 2px solid #fff;
+    color: #fff;
     transition: all ease .5s;
-    margin-top: 20px;
+    cursor: pointer;
 }
 
 .program-info .button-n:hover {
-    background-color: black;
-    color: white;
+    background-color: var(--color-primary);
+    border: 2px solid var(--color-primary);
 }
 
 .program-info {
@@ -84,14 +89,11 @@
 
 .about .content ul {
     list-style: none;
-    padding: 0;
+    padding-top: 20px;
 }
 
-.about .content ul li {
-    display: flex;
-    margin-top: 40px;
-    padding: 15px 0;
-    align-items: center;
+.about .content ul li{
+    padding-bottom: 10px;
 }
 
 .about .content ul li p {
@@ -100,11 +102,9 @@
 }
 
 .about .content ul i {
-    flex-shrink: 0;
-    font-size: 48px;
+    font-size: 20px;
+    padding-right: 4px;
     color: var(--color-primary);
-    margin-right: 20px;
-    line-height: 0;
 }
 
 .about .content ul h5 {
@@ -218,12 +218,35 @@
     }
 }
 
-.link a{
+.link a {
     text-decoration: underline;
     color: black;
     font-weight: bold;
 }
 
-.link a:hover{
+.link a:hover {
     color: #001f8d;
+}
+
+.readmore {
+    display: flex;
+    align-items: center;
+    color: var(--color-secondary);
+    transition: 0.3s;
+    font-weight: 700;
+    font-size: 14px;
+}
+
+.readmore i {
+    margin-left: 8px;
+}
+
+.service-item:hover .title,
+.service-item:hover .readmore,
+.service-item:hover .icon i {
+    color: var(--color-primary);
+}
+
+.stretched-link::after{
+    display: none;
 }
