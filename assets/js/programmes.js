@@ -12,6 +12,14 @@ function drawPrograme(key) {
         <img src="${select.image}" alt="" class="img-fluid services-img">
         <h3>${select.title}</h3>
         <p>${select.description}</p>
+        ${Array.isArray(select.items) && select.items.length ? (`
+            <ul>
+                ${select.items.map(item => (`
+                    <li><i class="bi bi-check-circle"></i> <span>${item}</span></li>
+                `)).join("")}    
+            </ul>
+        `) : ""}
+        
     `
 }
 
@@ -46,7 +54,7 @@ function drawListPrograme() {
 }
 
 function getData() {
-    get("public/programmes/countries-data.json", (res) => {
+    get("public/programmes/programess.json", (res) => {
         if (!res) return
         data = res.coutries
         console.log({ res })
