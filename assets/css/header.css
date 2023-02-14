@@ -32,15 +32,27 @@
     color: #ffde67;
 }
 
-@media only screen and (max-width: 850px) {
+.box-nav-mobile{
+  display: none;
+}
+
+@media only screen and (max-width: 1024px) {
   .box-call{
-    position: absolute;
-    width: 100%;
-    text-align: center;
-    top: 0;
-    padding-top: 5px;
+    display: none;
   }
 
+  .navbar{
+    align-items: flex-end;
+  }
+
+  .box-nav-mobile{
+    flex: 1 1 auto;
+    display: block;
+    z-index: 10000;
+  }
+}
+
+@media only screen and (max-width: 850px) {
   header{
     width: 100%;
     overflow: hidden;
