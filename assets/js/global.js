@@ -1,3 +1,7 @@
+const params = new Proxy(new URLSearchParams(window.location.search), {
+    get: (searchParams, prop) => searchParams.get(prop),
+})
+
 function get(url, callback) {
     var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function () {
@@ -17,7 +21,9 @@ function get(url, callback) {
 
 function drawMenuInfo(parent, data) {
     parent.innerHTML = `
-        <img src="${data.image || 'assets/img/image-not-found.png'}" alt="" class="img-fluid services-img">
+        ${data.image ? (`
+            <img src="${data.image || 'assets/img/image-not-found.png'}" alt="" class="img-fluid services-img">
+        `) : ""}
         <div>
             <h3>${data.title}</h3>
             <div class="box-list">
@@ -50,8 +56,17 @@ function drawMenuInfo(parent, data) {
     `
 }
 
+function removeActive(listBox){
+    listBox.querySelectorAll("a").forEach(a => {
+        a.classList.remove("active")
+    })
+}
 
 function drawListMenuInfo(contentBox, listBox, data, active = false) {
+    if(active){
+        removeActive(listBox)
+    }
+    
     let a = document.createElement("a")
 
     a.innerText = data.title || ""
@@ -66,9 +81,7 @@ function drawListMenuInfo(contentBox, listBox, data, active = false) {
         e.preventDefault()
         e.stopPropagation()
 
-        listBox.querySelectorAll("a").forEach(a => {
-            a.classList.remove("active")
-        })
+        removeActive(listBox)
 
         a.classList.add("active")
         drawMenuInfo(contentBox, data)

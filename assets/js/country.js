@@ -1,9 +1,9 @@
-const content = document.getElementById("content-programmes")
-const listProgrammes = document.getElementById("list-programmes")
+const content = document.getElementById("content-countries")
+const listCountries = document.getElementById("list-countries")
 
 function drawListCountry(data) {
     Object.keys(data).forEach((key, i) => {
-        drawListMenuInfo(content, listProgrammes, data[key], i == 0)
+        drawListMenuInfo(content, listCountries, data[key],  params.country == key || i == 0)
     })
 }
 
