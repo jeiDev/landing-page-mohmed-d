@@ -3,7 +3,7 @@ const listProgrammes = document.getElementById("list-programmes")
 
 function drawListCountry(data) {
     Object.keys(data).forEach((key, i) => {
-        drawListMenuInfo(content, listCountries, data[key],  params.country == key || i == 0)
+        drawListMenuInfo(content, listProgrammes, data[key],  params.country == key || i == 0)
     })
 }
 

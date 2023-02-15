@@ -9,6 +9,7 @@ function get(url, callback) {
             try {
                 callback(JSON.parse(this.responseText))
             } catch (error) {
+                console.log({error})
                 callback(this.responseText)
             }
         } else {
