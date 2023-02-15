@@ -8,10 +8,9 @@ function drawListCountry(data) {
 }
 
 function getData() {
-    get("public/programmes/programess.json", (res) => {
+    get("public/country/countries-data.json", (res) => {
         if (!res) return
-        drawListCountry(res.programess)
-
+        drawListCountry(res.coutries)
     })
 }
 
