@@ -1593,3 +1593,11 @@ section {
   max-height: 50px;
   filter: grayscale(1);
 }
+
+.home-breadcrumbs>div{
+  min-height: 60vh!important;
+}
+
+.home-breadcrumbs::before{
+  background-color: rgba(14, 29, 52, 0.5)!important;
+}
