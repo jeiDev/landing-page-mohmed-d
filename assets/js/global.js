@@ -95,7 +95,7 @@ function drawListMenuInfo(contentBox, listBox, data, active = false) {
 function googleTranslateElementInit() {
    setTimeout(() => {
     new google.translate.TranslateElement(
-        {pageLanguage: 'fr'},
+        {pageLanguage: 'fr', includedLanguages : 'fr,en,ar'},
         'google_translate_element'
     );
    }, 500)

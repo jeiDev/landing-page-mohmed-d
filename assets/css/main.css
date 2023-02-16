@@ -1599,7 +1599,9 @@ section {
 }
 
 .countries-container{
-  padding: 14px 0;
+  padding: 0;
+  background-color: #dcdcdc;
+  display: flex;
 }
 
 .ul-countries{
@@ -1611,6 +1613,9 @@ section {
   justify-content: center;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  align-items: center;
+  margin: 0;
+  padding: 0;
 }
 
 .ul-countries>li{
