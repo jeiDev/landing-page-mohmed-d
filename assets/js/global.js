@@ -92,6 +92,15 @@ function drawListMenuInfo(contentBox, listBox, data, active = false) {
     listBox.appendChild(a)
 }
 
+function googleTranslateElementInit() {
+   setTimeout(() => {
+    new google.translate.TranslateElement(
+        {pageLanguage: 'fr'},
+        'google_translate_element'
+    );
+   }, 500)
+}
+
 document.addEventListener("DOMContentLoaded", () => {
     includeHTML();
     header();
