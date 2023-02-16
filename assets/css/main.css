@@ -1572,6 +1572,7 @@ section {
   display: flex;
   align-items: center;
   background-color: var(--color-secondary);
+  padding: 13px 0!important;
 }
 
 .box-group{
@@ -1583,4 +1584,5 @@ section {
   width: 100%;
   object-fit: contain;
   max-height: 50px;
+  filter: grayscale(1);
 }
