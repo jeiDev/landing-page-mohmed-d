@@ -1597,3 +1597,38 @@ section {
 .home-breadcrumbs>div{
   min-height: 60vh!important;
 }
+
+.countries-container{
+  padding: 14px 0;
+}
+
+.ul-countries{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.ul-countries>li{
+  list-style: none;
+  padding: 13px 20px;
+}
+
+.readmore {
+  display: flex;
+  align-items: center;
+  color: var(--color-secondary);
+  transition: 0.3s;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+@media only screen and (max-width: 500px) {
+  .breadcrumbs .page-header h2{
+    font-size: 2em;
+  }
+}
