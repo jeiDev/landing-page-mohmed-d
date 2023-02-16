@@ -1111,15 +1111,22 @@ section {
   color: #fff;
 }
 
-.horizontal-pricing .featured .buy-btn {
-  background: var(--color-primary);
-  color: #fff;
-  border-color: #fff;
+.box-btn-home{
+  padding-top: 25px;
 }
 
-.horizontal-pricing .featured .buy-btn:hover {
+.home-btn {
+  background: transparent;
+  color: #fff;
+  border: 2px solid #fff;
+  padding: 15px 30px;
+  transition: all ease .4s;
+  font-weight: bold;
+}
+
+.home-btn:hover {
   background: #fff;
-  color: var(--color-primary);
+  color: var(--color-secondary);
 }
 
 /*--------------------------------------------------------------
