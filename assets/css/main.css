@@ -1655,7 +1655,8 @@ section {
 }
 
 .label-feed{
-  background-color: red;color: white;
+  background-color: red;
+  color: white;
   display: flex;
   align-items: center;
   justify-content: center;
