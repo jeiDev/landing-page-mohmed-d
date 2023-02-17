@@ -1,0 +1,33 @@
+{
+    "leyends": {
+        "headquarter": {
+            "title": "Headquarter",
+            "color": "#206c95"
+        },
+        "operational-countries": {
+            "title": "Operational countries",
+            "color": "#40aaa6"
+        },
+        "waiting-approval": {
+            "title": "Waiting for approval",
+            "color": "#b6c9ac"
+        }
+    },
+    "data": [
+        {
+            "id": "CA",
+            "name": "Canada",
+            "leyend": "headquarter"
+        },
+        {
+            "id": "MR",
+            "name": "Mauritania",
+            "leyend": "operational-countries"
+        },
+        {
+            "id": "ML",
+            "name": "Mali",
+            "leyend": "operational-countries"
+        }
+    ]
+}
