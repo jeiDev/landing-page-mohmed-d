@@ -8,7 +8,7 @@ function drawCiaudFeed() {
 
         ciaudFeedBox.innerHTML = data.items.map(item => (`
             <li class="carouselTicker__item item-feed">
-                <a href="">
+                <a href="${item.link}" target="_blank">
                     <p>${item.title}<span>${new Date(item.pubDate).toDateString()}</span></p>
                 </a>
             </li>

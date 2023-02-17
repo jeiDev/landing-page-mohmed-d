@@ -1644,6 +1644,16 @@ section {
   height: 44px;
 }
 
+.ciaudFeedBox .carouselTicker,
+.ciaudFeedBox .carouselTicker>div,
+.ciaudFeedBox .carouselTicker>div>ul{
+  height: 100%;
+}
+
+.ciaudFeedBox .carouselTicker{
+  margin-top: 3px;
+}
+
 .label-feed{
   background-color: red;color: white;
   display: flex;
@@ -1678,4 +1688,15 @@ section {
   font-size: .8em;
   padding-left: 5px;
   color: rgba(0,0,0,.7);
+}
+
+@media only screen and (max-width: 500px) {
+  .ciaudFeedBox{
+    flex-direction: column;
+    height: 77px;
+  }
+
+  .label-feed {
+    padding: 10px 20px;
+  }
 }
