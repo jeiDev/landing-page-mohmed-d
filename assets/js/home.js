@@ -1,20 +1,26 @@
 const ciaudFeedBox = document.getElementById("ciaudFeedBox")
 
-function drawCiaudFeed(){
-    if(!ciaudFeedBox) return 
+function drawCiaudFeed() {
+    if (!ciaudFeedBox) return
 
     getRSS("https://blog.ciaud.ca/feed", (data) => {
-        if(data.status != "ok" || !Array.isArray(data.items)) return
+        if (data.status != "ok" || !Array.isArray(data.items)) return
 
-
-        ciaudFeedBox.innerHTML = data.items.slice(0, 4).map(item => (`
-        
-        `))
+        ciaudFeedBox.innerHTML = data.items.map(item => (`
+            <li class="carouselTicker__item item-feed">
+                <a href="">
+                    <p>${item.title}<span>${new Date(item.pubDate).toDateString()}</span></p>
+                </a>
+            </li>
+        `)).join("")
         console.log({data})
+        $("#carouselTicker").carouselTicker();
     })
-   
+
 }
 
-document.addEventListener("DOMContentLoaded", () => {
-    drawCiaudFeed()
-})
+(function ($, undefined) {
+    $(window).on("load", function () {
+        drawCiaudFeed()
+    });
+})(jQuery);
