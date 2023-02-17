@@ -101,6 +101,13 @@ function googleTranslateElementInit() {
    }, 500)
 }
 
+function getRSS(url, callback){
+    var data = { rss: url }
+    $.get(`https://api.rss2json.com/v1/api.json?rss_url=${data.rss}`, function( data ) {
+        callback(data)
+    });
+}
+
 document.addEventListener("DOMContentLoaded", () => {
     includeHTML();
     header();
