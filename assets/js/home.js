@@ -33,9 +33,14 @@ function chartMap() {
             ]);
     
             var chart = root.container.children.push(am5map.MapChart.new(root, {
-                panX: "rotateX",
-                projection: am5map.geoNaturalEarth1()
+                // panX: "rotateX",
+                axis: 'horizontal',
+                projection: am5map.geoNaturalEarth1(),
+                maxZoomLevel: 1,
+                scrollWheelZoom: false
             }));
+
+            // chart.ctx.canvas.removeEventListener('wheel', chart._wheelHandler);
     
             var polygonSeries = chart.series.push(
                 am5map.MapPolygonSeries.new(root, {
@@ -44,12 +49,16 @@ function chartMap() {
                     fill: "#d1dbdd",
                     stroke: am5.color(0x000000),
                     strokeWidth: 2,
+                    wheelable: true
                 })
             );
     
-            polygonSeries.mapPolygons.template.setAll({
+            var polygonTemplate = polygonSeries.mapPolygons.template;
+
+            polygonTemplate.setAll({
                 tooltipText: "{name}",
-                templateField: "polygonSettings"
+                templateField: "polygonSettings",
+                wheelable: false
             });
             
             if(Array.isArray(res.data) && res.leyends){
@@ -60,6 +69,7 @@ function chartMap() {
                     } : {}
                 })))
             }
+
             
             chart.appear(1000, 100);
         });
