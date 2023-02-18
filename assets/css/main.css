@@ -1712,8 +1712,9 @@ section {
   height: 100%;
   z-index: 50;
   display: flex;
-  flex-direction: column;
   padding: 0 0 133px 39px;
+  justify-content: center;
+  gap: 0 15px;
 }
 
 .box-leyend{
