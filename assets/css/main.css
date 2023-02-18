@@ -1696,11 +1696,15 @@ section {
 @media only screen and (max-width: 500px) {
   .ciaudFeedBox{
     flex-direction: column;
-    height: 77px;
+    height: 74px;
   }
 
   .label-feed {
-    padding: 10px 20px;
+    padding: 10px 0 0 20px;
+  }
+
+  .carouselTicker__item.item-feed p{
+    padding-bottom: 50px;
   }
 }
 
