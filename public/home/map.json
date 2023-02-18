@@ -20,14 +20,94 @@
             "leyend": "headquarter"
         },
         {
-            "id": "MR",
-            "name": "Mauritania",
+            "id": "SN",
+            "name": "Senegal",
             "leyend": "operational-countries"
         },
         {
             "id": "ML",
             "name": "Mali",
             "leyend": "operational-countries"
+        },
+        {
+            "id": "GN",
+            "name": "Guinea",
+            "leyend": "operational-countries"
+        },
+        {
+            "id": "CI",
+            "name": "Ivory Coast",
+            "leyend": "operational-countries"
+        },
+        {
+            "id": "BF",
+            "name": "Burkina Faso",
+            "leyend": "operational-countries"
+        },
+        {
+            "id": "NE",
+            "name": "Niger",
+            "leyend": "operational-countries"
+        },
+        {
+            "id": "TD",
+            "name": "Chad",
+            "leyend": "operational-countries"
+        },
+        {
+            "id": "CM",
+            "name": "Cameroon",
+            "leyend": "operational-countries"
+        },
+        {
+            "id": "CF",
+            "name": "Central African Republic",
+            "leyend": "operational-countries"
+        },
+        {
+            "id": "CD",
+            "name": "Democratic Republic of Congo",
+            "leyend": "operational-countries"
+        },
+        {
+            "id": "SO",
+            "name": "Somalia",
+            "leyend": "operational-countries"
+        },
+        {
+            "id": "MA",
+            "name": "Morocco",
+            "leyend": "waiting-approval"
+        },
+        {
+            "id": "SD",
+            "name": "Sudan",
+            "leyend": "waiting-approval"
+        },
+        {
+            "id": "ET",
+            "name": "Ethiopia",
+            "leyend": "waiting-approval"
+        },
+        {
+            "id": "SS",
+            "name": "South Sudan",
+            "leyend": "waiting-approval"
+        },
+        {
+            "id": "UG",
+            "name": "Uganda",
+            "leyend": "waiting-approval"
+        },
+        {
+            "id": "KE",
+            "name": "Kenya",
+            "leyend": "waiting-approval"
+        },
+        {
+            "id": "MZ",
+            "name": "Mozambique",
+            "leyend": "waiting-approval"
         }
     ]
 }
