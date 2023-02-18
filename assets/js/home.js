@@ -54,7 +54,6 @@ function chartMap() {
             );
     
             var polygonTemplate = polygonSeries.mapPolygons.template;
-            // polygonTemplate.
             polygonTemplate.setAll({
                 tooltipText: "{name}",
                 templateField: "polygonSettings",
