@@ -1,4 +1,5 @@
 const ciaudFeedBox = document.getElementById("ciaudFeedBox")
+const contentMap = document.getElementById("content-map")
 
 function drawCiaudFeed() {
     if (!ciaudFeedBox) return
@@ -23,6 +24,19 @@ function chartMap() {
     get("public/home/map.json", (res) => {
         if(!res) return
         console.log({res})
+
+        
+        Object.values(res.leyends && typeof res.leyends == "object" ? res.leyends : {}).forEach(leyend => {
+            let dom = document.createElement("div")
+
+            dom.innerHTML = `
+                <div class="box-leyend" style="background: white;">
+                    <div class="square-map" style="background: ${leyend.color};"></div>
+                    <span>${leyend.title}</span>
+                </div>
+            `
+            contentMap.appendChild(dom)
+        })
 
         am5.ready(function () {
     

@@ -1711,6 +1711,22 @@ section {
   width: 100%;
   height: 100%;
   z-index: 50;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 0 0 133px 39px;
+}
+
+.box-leyend{
+  display: flex;
+  align-items: center;
+}
+
+.square-map{
+  height: 15px;
+  width: 15px;
+  border: 1px solid black;
+  margin: 8px;
 }
 
 @media only screen and (max-width: 500px) {
@@ -1734,6 +1750,10 @@ section {
   }
 
   .box-map>#chartMap{
-    height: 208px;
+    height: 324px;
+  }
+
+  .content-map{
+    padding: 0 0 0px 39px;
   }
 }
