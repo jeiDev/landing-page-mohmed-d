@@ -1,11 +1,14 @@
 function header() {
-    setTimeout(() => {
+    let timer;
+    
+    timer = setTimeout(() => {
         const selectHeader = document.getElementById('header');
-        if (selectHeader) {
-            document.addEventListener('scroll', () => {
-                window.scrollY > 100 ? selectHeader.classList.add('sticked') : selectHeader.classList.remove('sticked');
-            });
-        }
+        if(!selectHeader) return 
+        clearInterval(timer)
+
+        document.addEventListener('scroll', () => {
+            window.scrollY > 100 ? selectHeader.classList.add('sticked') : selectHeader.classList.remove('sticked');
+        });
 
         /**
       * Mobile nav toggle
