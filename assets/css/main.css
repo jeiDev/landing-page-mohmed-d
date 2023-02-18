@@ -1759,3 +1759,7 @@ section {
     font-size: 0.6em;
   }
 }
+
+body>.skiptranslate {
+  display: none !important;
+} 

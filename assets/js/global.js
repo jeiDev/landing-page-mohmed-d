@@ -93,12 +93,20 @@ function drawListMenuInfo(contentBox, listBox, data, active = false) {
 }
 
 function googleTranslateElementInit() {
-   setTimeout(() => {
+    let time;
+
+
+   time = setInterval(() => {
+    let el = document.getElementById("google_translate_element");
+    if(!el) return 
+    console.log("yex")
+    clearInterval(time)
+
     new google.translate.TranslateElement(
         {pageLanguage: 'fr', includedLanguages : 'fr,en,ar'},
         'google_translate_element'
     );
-   }, 500)
+   }, 100)
 }
 
 function getRSS(url, callback){
