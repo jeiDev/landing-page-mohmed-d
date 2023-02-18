@@ -1713,7 +1713,6 @@ section {
   z-index: 50;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
   padding: 0 0 133px 39px;
 }
 
