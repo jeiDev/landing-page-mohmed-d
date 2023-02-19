@@ -7,7 +7,7 @@ function header() {
         window.scrollY > 100 ? selectHeader.classList.add('sticked') : selectHeader.classList.remove('sticked');
     });
     
-    timer = setTimeout(() => {
+    timer = setInterval(() => {
         const selectHeader = document.getElementById('header');
         if(!selectHeader) return 
         clearInterval(timer)
