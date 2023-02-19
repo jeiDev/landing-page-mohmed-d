@@ -1,8 +1,12 @@
 [
-    {
-        "title": "Être bénévole international et travailler avec les gens du pays vous permet d’apporter une contribution riche de sens à cette communauté.",
-        "images": ["assets/img/volunteering/Rectangle-7-19-1.jpeg", "assets/img/volunteering/Rectangle-98-1.jpeg", "assets/img/volunteering/Rectangle-99-5-1.jpeg"],
-        "position": "left",
-        "description": "Nous avons tout un panel de programmes d’activités de volontariat qui peuvent concerner aussi bien ceux ou celles qui n’ont aucune expérience que les professionnels, et ce dans les quatre coins du monde.</br> </br> Si vous voulez agir pour la protection, la santé, l’éducation de celles et ceux qui ont été obligés de fuir pour sauver leur vie, contactez nous en remplissant le formulaire ci-après ou en nous appelant aux numéros indiqués."
-    }
+  {
+    "title": "Être bénévole international et travailler avec les gens du pays vous permet d’apporter une contribution riche de sens à cette communauté.",
+    "images": [
+      "assets/img/volunteering/Rectangle-7-19-1.webp",
+      "assets/img/volunteering/Rectangle-98-1.webp",
+      "assets/img/volunteering/Rectangle-99-5-1.webp"
+    ],
+    "position": "left",
+    "description": "Nous avons tout un panel de programmes d’activités de volontariat qui peuvent concerner aussi bien ceux ou celles qui n’ont aucune expérience que les professionnels, et ce dans les quatre coins du monde.</br> </br> Si vous voulez agir pour la protection, la santé, l’éducation de celles et ceux qui ont été obligés de fuir pour sauver leur vie, contactez nous en remplissant le formulaire ci-après ou en nous appelant aux numéros indiqués."
+  }
 ]

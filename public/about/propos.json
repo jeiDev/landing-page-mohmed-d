@@ -1,26 +1,26 @@
 [
-    {
-        "title": "Mission",
-        "image": "assets/img/about.jpg",
-        "position": "left",
-        "description": "Le Comité International pour l’Aide d’Urgence et le Développement a pour Mission de fournir une assistance humanitaire dans les situations de crise dont notamment la famine, le désastre, les catastrophes naturelles, les conflits armés et de contribuer au développement communautaire dans les pays en voie de développement afin d’aider les populations à acquérir leur propre autonomie.",
-        "button": {
-            "title": "Structure de l'organisation",
-            "link": "#"
-        },
-        "items": [
-            "Assistance humanitaire dans les situations de crises.",
-            "Développement communautaire."
-        ]
+  {
+    "title": "Mission",
+    "image": "assets/img/about.webp",
+    "position": "left",
+    "description": "Le Comité International pour l’Aide d’Urgence et le Développement a pour Mission de fournir une assistance humanitaire dans les situations de crise dont notamment la famine, le désastre, les catastrophes naturelles, les conflits armés et de contribuer au développement communautaire dans les pays en voie de développement afin d’aider les populations à acquérir leur propre autonomie.",
+    "button": {
+      "title": "Structure de l'organisation",
+      "link": "#"
     },
-    {
-        "title": "Valeurs",
-        "image": "assets/img/a-propos/pexels-roger-sekoua-1813914-2048x1400.jpeg",
-        "position": "right",
-        "description": "Nos valeurs et notre philosophie reflètent notre engagement auprès des communautés au travers d’un PARTENARIAT qui fait d’elles les propres maitres de leur relèvement et de leur développement. Ce principe est au cœur de chacune de nos décisions. Ainsi, chez CIAUD, nous nous considérons, en tant qu’organisation et en tant qu’individus responsables de tout ce que nous entreprenons pour continuer à mériter la confiance reçue.",
-        "button": {
-            "title": "Lire la suite",
-            "link": "#"
-        }
+    "items": [
+      "Assistance humanitaire dans les situations de crises.",
+      "Développement communautaire."
+    ]
+  },
+  {
+    "title": "Valeurs",
+    "image": "assets/img/a-propos/pexels-roger-sekoua-1813914-2048x1400.webp",
+    "position": "right",
+    "description": "Nos valeurs et notre philosophie reflètent notre engagement auprès des communautés au travers d’un PARTENARIAT qui fait d’elles les propres maitres de leur relèvement et de leur développement. Ce principe est au cœur de chacune de nos décisions. Ainsi, chez CIAUD, nous nous considérons, en tant qu’organisation et en tant qu’individus responsables de tout ce que nous entreprenons pour continuer à mériter la confiance reçue.",
+    "button": {
+      "title": "Lire la suite",
+      "link": "#"
     }
+  }
 ]
