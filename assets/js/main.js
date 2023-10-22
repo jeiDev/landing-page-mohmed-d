@@ -4,6 +4,7 @@
 * Author: BootstrapMade.com
 * License: https://bootstrapmade.com/license/
 */
+
 document.addEventListener('DOMContentLoaded', () => {
   "use strict";
 
@@ -20,13 +21,13 @@ document.addEventListener('DOMContentLoaded', () => {
   /**
    * Sticky header on scroll
    */
-  
+
   /**
    * Scroll top button
    */
   const scrollTop = document.querySelector('.scroll-top');
   if (scrollTop) {
-    const togglescrollTop = function() {
+    const togglescrollTop = function () {
       window.scrollY > 100 ? scrollTop.classList.add('active') : scrollTop.classList.remove('active');
     }
     window.addEventListener('load', togglescrollTop);
@@ -37,7 +38,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }));
   }
 
- 
+
   /**
    * Hide mobile nav on same-page/hash links
    */

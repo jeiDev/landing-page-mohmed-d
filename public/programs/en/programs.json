@@ -1,0 +1,40 @@
+{
+  "programs": {
+    "health": {
+      "title": "Health",
+      "description": "Within this program, we aspire to provide science and technology to improve health and save lives of people in developing countries. </br> </br> We raise funds, attract external experts, and provide medicines and diagnostics to address most cases, such as the prevention and treatment of infectious diseases. </br> </br> We empower communities to take charge and manage health facilities.",
+      "image": "assets/img/programs/health.webp"
+    },
+    "education": {
+      "title": "Education",
+      "description": "We articulate our commitment to the education of the poorest and most marginalized. We contribute to:",
+      "image": "assets/img/programs/Rectangle-7-17-1.webp",
+      "items": [
+        "Supporting children of female-headed households, Sex Workers, and other vulnerable children due to their parents' disabilities.",
+        "Involving families and communities as partners in school development.",
+        "Engaging schools in family and community development.",
+        "Making schools a place for experimenting with living together, conflict prevention, and peace consolidation."
+      ]
+    },
+    "protection": {
+      "title": "Protection",
+      "description": "Aims to increase the protection of civilian populations affected by insecurity, conflicts, displacement, and human rights violations.",
+      "image": "assets/img/programs/Rectangle-7-18-1.webp"
+    },
+    "community-services": {
+      "title": "Community Services",
+      "description": "The community service program is a program in which volunteers commit their time to support and enhance their community. It can involve short-term or long-term projects that aim to solve specific problems or make a positive contribution to the community in general. </br> </br> Volunteers can work on individual or team projects and may be involved in activities such as organizing community events, assisting the elderly or low-income individuals, teaching new skills, or renovating community buildings. </br> </br> The community service program aims to create a more cohesive community and strengthen bonds among community members.",
+      "image": "assets/img/programs/Rectangle-8-5-1.webp"
+    },
+    "livelihood": {
+      "title": "Livelihood",
+      "description": "This program aims to improve the economic conditions of vulnerable communities by providing them with the tools and skills necessary to develop profitable activities. Activities include entrepreneurship training, setting up cooperatives, access to financing and markets, as well as technical support for local product production and marketing. The ultimate goal is to enable participants to become self-sufficient and escape long-term poverty.",
+      "image": "assets/img/programs/livelihood-min-1.webp"
+    },
+    "wash": {
+      "title": "WASH",
+      "description": "This program aims to improve access to clean water, sanitation, and hygiene for populations affected by humanitarian emergencies. It includes the construction of water distribution systems, latrines, and showers, as well as hygiene and proper facility use awareness. The program targets vulnerable communities, such as those displaced by conflicts, refugees, and areas affected by natural disasters. The ultimate goal is to prevent water and sanitation-related diseases, ensure the dignity and safety of affected individuals, and contribute to their long-term recovery.",
+      "image": "assets/img/programs/wahs-min.webp"
+    }
+  }
+}

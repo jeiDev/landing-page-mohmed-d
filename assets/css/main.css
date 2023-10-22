@@ -34,6 +34,7 @@
 body {
   font-family: var(--font-default);
   color: var(--color-default);
+  top: 0 !important;
 }
 
 a {
@@ -1111,7 +1112,7 @@ section {
   color: #fff;
 }
 
-.box-btn-home{
+.box-btn-home {
   padding-top: 25px;
 }
 
@@ -1558,7 +1559,7 @@ section {
   font-weight: 600;
 }
 
-.box-list{
+.box-list {
   display: flex;
   justify-content: space-between;
   font-size: .9em;
@@ -1566,23 +1567,23 @@ section {
   padding-bottom: 18px;
 }
 
-.list-strong{
+.list-strong {
   padding-right: 5px;
 }
 
-.section-group{
+.section-group {
   padding: 20px 20vw;
 }
 
-.container-group{
+.container-group {
   width: 100%;
   display: flex;
   align-items: center;
   background-color: var(--color-secondary);
-  padding: 13px 0!important;
+  padding: 13px 0 !important;
 }
 
-.box-group{
+.box-group {
   width: 100%;
   height: 100%;
   display: flex;
@@ -1590,24 +1591,24 @@ section {
   justify-content: center;
 }
 
-.box-group>img{
+.box-group>img {
   width: 100%;
   object-fit: contain;
   max-height: 50px;
   filter: grayscale(1);
 }
 
-.home-breadcrumbs>div{
-  min-height: 60vh!important;
+.home-breadcrumbs>div {
+  min-height: 60vh !important;
 }
 
-.countries-container{
+.countries-container {
   padding: 0;
   background-color: #dcdcdc;
   display: flex;
 }
 
-.ul-countries{
+.ul-countries {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1621,9 +1622,9 @@ section {
   padding: 0;
 }
 
-.ul-countries>li{
+.ul-countries>li {
   list-style: none;
-  padding: 13px 20px;
+  padding: 7px 15px;
 }
 
 .readmore {
@@ -1636,28 +1637,28 @@ section {
 }
 
 @media only screen and (max-width: 500px) {
-  .breadcrumbs .page-header h2{
+  .breadcrumbs .page-header h2 {
     font-size: 2em;
   }
 }
 
-.ciaudFeedBox{
-  padding: 0!important;
+.ciaudFeedBox {
+  padding: 0 !important;
   display: flex;
   height: 32px;
 }
 
 .ciaudFeedBox .carouselTicker,
 .ciaudFeedBox .carouselTicker>div,
-.ciaudFeedBox .carouselTicker>div>ul{
+.ciaudFeedBox .carouselTicker>div>ul {
   height: 100%;
 }
 
-.ciaudFeedBox .carouselTicker{
+.ciaudFeedBox .carouselTicker {
   margin-top: 3px;
 }
 
-.label-feed{
+.label-feed {
   background-color: whitesmoke;
   color: #0e1d34;
   display: flex;
@@ -1669,17 +1670,17 @@ section {
   padding-top: 13px;
 }
 
-.item-feed{
+.item-feed {
   display: flex;
   align-items: center;
 }
 
-.item-feed>p{
+.item-feed>p {
   margin: 0;
   padding: 0;
 }
 
-.item-feed p{
+.item-feed p {
   padding: 0;
   margin: 0;
   display: flex;
@@ -1689,25 +1690,25 @@ section {
   font-weight: bold;
 }
 
-.item-feed p>span{
-  padding-right: 30px; 
+.item-feed p>span {
+  padding-right: 30px;
   font-size: .8em;
   padding-left: 5px;
-  color: rgba(0,0,0,.7);
+  color: rgba(0, 0, 0, .7);
 }
 
 
-.box-map{
+.box-map {
   position: relative;
 }
 
-.box-map>#chartMap{
+.box-map>#chartMap {
   width: 100%;
   height: 900px;
   overflow: hidden;
 }
 
-.content-map{
+.content-map {
   position: absolute;
   left: 0;
   top: 0;
@@ -1720,12 +1721,12 @@ section {
   gap: 0 15px;
 }
 
-.box-leyend{
+.box-leyend {
   display: flex;
   align-items: center;
 }
 
-.square-map{
+.square-map {
   height: 15px;
   width: 15px;
   border: 1px solid black;
@@ -1733,7 +1734,7 @@ section {
 }
 
 @media only screen and (max-width: 500px) {
-  .ciaudFeedBox{
+  .ciaudFeedBox {
     flex-direction: column;
     height: 74px;
   }
@@ -1742,21 +1743,21 @@ section {
     padding: 10px 0 0 20px;
   }
 
-  .carouselTicker__item.item-feed p{
+  .carouselTicker__item.item-feed p {
     padding-bottom: 50px;
   }
 
-  .box-map{
+  .box-map {
     padding: 0;
-    padding-top: 0!important;
+    padding-top: 0 !important;
     padding-bottom: 37px;
   }
 
-  .box-map>#chartMap{
+  .box-map>#chartMap {
     height: 324px;
   }
 
-  .content-map{
+  .content-map {
     padding: 0 0 0px 0px;
     gap: 0px;
     font-size: 0.6em;
@@ -1765,4 +1766,4 @@ section {
 
 body>.skiptranslate {
   display: none !important;
-} 
+}

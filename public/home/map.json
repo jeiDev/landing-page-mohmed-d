@@ -92,7 +92,7 @@
     {
       "id": "SS",
       "name": "South Sudan",
-      "leyend": "waiting-approval"
+      "leyend": "operational-countries"
     },
     {
       "id": "UG",
@@ -102,12 +102,42 @@
     {
       "id": "KE",
       "name": "Kenya",
-      "leyend": "waiting-approval"
+      "leyend": "operational-countries"
     },
     {
       "id": "MZ",
       "name": "Mozambique",
       "leyend": "waiting-approval"
+    },
+    {
+      "id": "BI",
+      "name": "Burundi",
+      "leyend": "waiting-approval"
+    },
+    {
+      "id": "RW",
+      "name": "Rwanda",
+      "leyend": "waiting-approval"
+    },
+    {
+      "id": "TG",
+      "name": "Togo",
+      "leyend": "operational-countries"
+    },
+    {
+      "id": "HT",
+      "name": "Haïti",
+      "leyend": "waiting-approval"
+    },
+    {
+      "id": "GH",
+      "name": "Ghana",
+      "leyend": "operational-countries"
+    },
+    {
+      "id": "NG",
+      "name": "Nigeria",
+      "leyend": "operational-countries"
     }
   ]
 }

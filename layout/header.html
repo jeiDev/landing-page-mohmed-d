@@ -1,60 +1,88 @@
 <header id="header" class="header d-flex align-items-center fixed-top">
-    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+  <div
+    class="container-fluid container-xl d-flex align-items-center justify-content-between"
+  >
+    <a href="index.html" class="logo d-flex align-items-center">
+      <!-- Uncomment the line below if you also wish to use an image logo -->
+      <img src="assets/img/logo.webp" alt="" />
+    </a>
 
-        <a href="index.html" class="logo d-flex align-items-center">
-            <!-- Uncomment the line below if you also wish to use an image logo -->
-            <img src="assets/img/logo.webp" alt="">
+    <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+    <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+    <nav id="navbar" class="navbar">
+      <ul>
+        <li class="dropdown">
+          <a href="#"
+            ><span data-i18n="what-we-do" class="translation"></span>
+            <i class="bi bi-chevron-down dropdown-indicator"></i
+          ></a>
+          <ul>
+            <li><a href="about.html" data-i18n="about-ciaud" class="translation"></a></li>
+            <li><a href="programs.html" data-i18n="our-programs" class="translation"></a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#"
+            ><span data-i18n="where-we-act" class="translation"></span>
+            <i class="bi bi-chevron-down dropdown-indicator"></i
+          ></a>
+          <ul>
+            <li><a href="countries.html?country=niger">Niger</a></li>
+            <li><a href="countries.html?country=mali">Mali</a></li>
+            <li><a href="countries.html?country=guinee">Guinée</a></li>
+            <li><a href="countries.html?country=burkina-faso">Burkina Faso</a></li>
+            <li>
+              <a href="countries.html?country=cote-ivoire">Côte d’Ivoire</a>
+            </li>
+            <li><a href="countries.html?country=djibouti">Djibouti</a></li>
+            <li><a href="countries.html?country=rdc">RDC</a></li>
+            <li>
+              <a href="countries.html?country=cameroun">Cameroun</a>
+            </li>
+            <li><a href="countries.html?country=tchad">Tchad</a></li>
+            <li><a href="countries.html?country=somalie">Somalie</a></li>
+            <li><a href="countries.html?country=togo">Togo</a></li>
+            <li><a href="countries.html?country=nigeria">Nigeria</a></li>
+            <li><a href="countries.html?country=kenya">Kenya</a></li>
+            <li><a href="countries.html?country=ghana">Ghana</a></li>
+            <li><a href="countries.html?country=south-sudan">Soudan du Sud</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#"
+            ><span data-i18n="take-action" class="translation"></span>
+            <i class="bi bi-chevron-down dropdown-indicator"></i
+          ></a>
+          <ul>
+            <li><a href="volunteering.html" data-i18n="volunteering" class="translation"></a></li>
+            <li><a href="career.html" data-i18n="career" class="translation"></a></li>
+          </ul>
+        </li>
+        <li><a href="contact.html" data-i18n="contact" class="translation"></a></li>
+        <li>
+          <a>
+            <select id="language-select">
+              <option value="fr">Français</option>
+              <option value="en">English</option>
+          </select>
+          </a>
+        </li>
+      </ul>
+      <div class="box-nav-mobile">
+        <a href="tel:+18195800412">
+          <div>
+            <i class="fa-solid fa-phone-volume"></i>
+            <span style="padding-left: 8px">+1 (819) 580 0412</span>
+          </div>
         </a>
-
-        <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
-        <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i> 
-        <nav id="navbar" class="navbar">
-            <ul>
-                <li class="dropdown"><a href="#"><span>Ce que nous faisons</span> <i
-                            class="bi bi-chevron-down dropdown-indicator"></i></a>
-                    <ul>
-                        <li><a href="about.html">À propos du CIAUD</a></li>
-                        <li><a href="programmes.html">Nos programmes</a></li>
-                    </ul>
-                </li>
-                <li class="dropdown"><a href="#"><span>Où nous agissons</span> <i
-                            class="bi bi-chevron-down dropdown-indicator"></i></a>
-                    <ul>
-                        <li><a href="countries.html?country=niger">Niger</a></li>
-                        <li><a href="countries.html?country=mali">Mali</a></li>
-                        <li><a href="countries.html?country=guinee">Guinée</a></li>
-                        <li><a href="countries.html?country=burkina-faso">Burkina Faso</a></li>
-                        <li><a href="countries.html?country=cote-ivoire">Côte d’Ivoire</a></li>
-                        <li><a href="countries.html?country=djibouti">Djibouti</a></li>
-                        <li><a href="countries.html?country=rdc">RDC</a></li>
-                        <li><a href="countries.html?country=republique-centraficaine">République Centrafricaine</a></li>
-                        <li><a href="countries.html?country=tchad">Tchad</a></li>
-                        <li><a href="countries.html?country=somalie">Somalie</a></li>
-                    </ul>
-                </li>
-                <li class="dropdown"><a href="#"><span>Passez à l’action</span> <i
-                            class="bi bi-chevron-down dropdown-indicator"></i></a>
-                    <ul>
-                        <li><a href="volunteering.html">Bénévolat</a></li>
-                        <li><a href="career.html">Carrière</a></li>
-                    </ul>
-                </li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-            <div class="box-nav-mobile">
-                <a href="tel:+18195800412">
-                    <div>
-                        <i class="fa-solid fa-phone-volume"></i>
-                        <span style="padding-left: 8px;">+1 (819) 580 0412</span>
-                    </div>
-                </a>
-            </div>
-        </nav><!-- .navbar -->
-        <div class="box-call">
-            <a href="tel:+18195800412">
-                <i class="fa-solid fa-phone-volume"></i>
-                <span>+1 (819) 580 0412</span>
-            </a>
-        </div>
+      </div>
+    </nav>
+    <!-- .navbar -->
+    <div class="box-call">
+      <a href="tel:+18195800412">
+        <i class="fa-solid fa-phone-volume"></i>
+        <span>+1 (819) 580 0412</span>
+      </a>
     </div>
+  </div>
 </header>

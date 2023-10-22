@@ -5,7 +5,7 @@
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
     <title>
-      Contacts – Comité International pour l'Aide d'Urgence et le Développement
+      Contacts – CIAUD 
     </title>
     <meta content="" name="description" />
     <meta content="" name="keywords" />
@@ -78,11 +78,8 @@
           <div class="container position-relative">
             <div class="row d-flex justify-content-center">
               <div class="col-lg-6 text-center">
-                <h2>N'hésitez pas à nous contacter</h2>
-                <p>
-                  Vous aimez ce que nous représentons ? Vous voulez plus
-                  d’informations ? Besoin d’assistance?
-                </p>
+                <h2 data-i18n="contact-us-title" class="translation"></h2>
+                <p data-i18n="contact-us-title-desc" class="translation"></p>
               </div>
             </div>
           </div>
@@ -90,8 +87,8 @@
         <nav>
           <div class="container">
             <ol>
-              <li><a href="index.html">Accueil</a></li>
-              <li>Contact</li>
+              <li><a href="index.html" data-i18n="home" class="translation"></a></li>
+              <li data-i18n="contact" class="translation"></li>
             </ol>
           </div>
         </nav>
@@ -155,7 +152,7 @@
                       name="name"
                       class="form-control"
                       id="firsName"
-                      placeholder="Votre prénom"
+                      placeholder="Votre prénom | Your first name"
                       required
                     />
                   </div>
@@ -165,7 +162,7 @@
                       name="name"
                       class="form-control"
                       id="lastName"
-                      placeholder="Votre nom"
+                      placeholder="Votre nom | Your last name"
                       required
                     />
                   </div>
@@ -177,7 +174,7 @@
                       class="form-control"
                       name="email"
                       id="email"
-                      placeholder="Votre adresse courriel"
+                      placeholder="Votre adresse courriel | Your email address"
                       required
                     />
                   </div>
@@ -187,7 +184,7 @@
                       class="form-control"
                       name="phone"
                       id="phone"
-                      placeholder="Votre numéro de téléphone"
+                      placeholder="Votre numéro de téléphone | Your phone number"
                       required
                     />
                   </div>
@@ -197,19 +194,17 @@
                     class="form-control"
                     name="message"
                     rows="5"
-                    placeholder="Votre message"
+                    placeholder="Votre message | Your message"
                     required
                   ></textarea>
                 </div>
                 <div class="my-3">
-                  <div class="loading">Loading</div>
-                  <div class="error-message"></div>
-                  <div class="sent-message">
-                    Your message has been sent. Thank you!
-                  </div>
+                  <div class="loading" data-i18n="loading" class="translation"></div>
+                  <div class="error-message" data-i18n="message-not-sent" class="translation"></div>
+                  <div class="sent-message" data-i18n="message-sent" class="translation"></div>
                 </div>
                 <div class="text-center">
-                  <button type="submit">Envoyer le message</button>
+                  <button type="submit" data-i18n="send-message" class="translation"></button>
                 </div>
               </form>
             </div>
@@ -231,6 +226,11 @@
       ><i class="bi bi-arrow-up-short"></i
     ></a>
 
+    <!-- i18n JS Files -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/i18next/23.5.0/i18next.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/i18next-http-backend/2.2.2/i18nextHttpBackend.min.js"></script>
+    <script src="assets/js/translator.js"></script>
+    
     <!-- Vendor JS Files -->
     <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
@@ -244,9 +244,5 @@
     <script src="assets/js/main.js"></script>
     <script src="assets/js/includeHTML.js"></script>
     <script src="assets/js/global.js"></script>
-    <script
-      type="text/javascript"
-      src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
-    ></script>
   </body>
 </html>

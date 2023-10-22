@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Carrière – Comité International pour l'Aide d'Urgence et le Développement</title>
+  <title>Carrière | Career – CIAUD </title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -86,8 +86,8 @@
       <nav>
         <div class="container">
           <ol>
-            <li><a href="index.html">Accueil</a></li>
-            <li>Carrière</li>
+            <li><a href="index.html" data-i18n="home" class="translation"></a></li>
+            <li data-i18n="career" class="translation"></li>
           </ol>
         </div>
       </nav>
@@ -95,10 +95,10 @@
 
     <section>
      <div class="container">
-      <h3 class="career-title">Consultez et Postulez</h3>
-      <p class="career-description">
-        Pour Consulter et Postuler aux emplois disponibles chez CIAUD à travers le monde, veuillez cliquer sur
-          <a href="jobs.ciaud.ca" style="padding-left: 5px;">
+      <h3 class="career-title" data-i18n="check-apply" class="translation"></h3>
+      <p class="career-description" >
+        <span data-i18n="check-apply-desc" class="translation"></span>
+          <a href="https://jobs.ciaud.ca" style="padding-left: 5px;" target="_blank">
             jobs.ciaud.ca
           </a>
       </p>
@@ -111,7 +111,10 @@
     <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i
         class="bi bi-arrow-up-short"></i></a>
 
-    
+    <!-- i18n JS Files -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/i18next/23.5.0/i18next.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/i18next-http-backend/2.2.2/i18nextHttpBackend.min.js"></script>
+    <script src="assets/js/translator.js"></script>
 
     <!-- Vendor JS Files -->
     <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -125,8 +128,8 @@
     <script src="assets/js/header.js"></script>
     <script src="assets/js/main.js"></script>
     <script src="assets/js/includeHTML.js"></script>
+    <script src="assets/js/career.js"></script>
     <script src="assets/js/global.js"></script>
-    <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 </body>
 
 </html>

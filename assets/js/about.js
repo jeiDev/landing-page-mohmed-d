@@ -3,6 +3,7 @@ const parentProgram = document.getElementById("program")
 const parentPropos = document.getElementById("propos")
 const titleBanner = document.getElementById("title-banner")
 const descriptionBanner = document.getElementById("description-banner")
+const languageSelector = document.getElementById("language-select")
 
 /**
  * @typedef {Object} Social
@@ -37,8 +38,8 @@ function drawTeam(item) {
             <p>${item.description}</p>
             <div class="social">
                 ${item.socials.map(social => (
-                    `<a href="${social.link}"><i class="bi bi-${social.type}"></i></a>`
-                )).join("")}
+        `<a href="${social.link}"><i class="bi bi-${social.type}"></i></a>`
+    )).join("")}
             </div>
             </div>
         </div>
@@ -50,15 +51,16 @@ function drawTeam(item) {
 
 
 
-async function getTeam(){
-    get("public/about/team.json", res => {
-        if(!res) return
+async function getTeam() {
+    const selectedLanguage = localStorage.getItem("selectedLanguage") || "fr"
+    get(`public/about/${selectedLanguage}/team.json`, res => {
+        if (!res) return
         res.forEach(item => (drawTeam(item)))
     })
 }
 
 
-function drawProgram(data){
+function drawProgram(data) {
     let title = parentProgram.querySelector("h2")
     let description = parentProgram.querySelector("p")
     let button = parentProgram.querySelector(".button-n")
@@ -68,14 +70,15 @@ function drawProgram(data){
     button.innerText = data.button.title
 }
 
-async function getProgram(){
-    get("public/about/program.json", res => {
-        if(!res) return 
+async function getProgram() {
+    const selectedLanguage = localStorage.getItem("selectedLanguage") || "fr"
+    get(`public/about/${selectedLanguage}/program.json`, res => {
+        if (!res) return
         drawProgram(res)
     })
 }
 
-function drawPropos(data){
+function drawPropos(data) {
     let el = document.createElement("section")
 
     el.classList.add("about")
@@ -87,7 +90,7 @@ function drawPropos(data){
                 <img src="${data.image}" class="img-fluid" alt="">
             </div>
             <div class="col-lg-6 content content-info ${data.position == 'left' ? 'order-last order-lg-first' : 'order-last order-lg-last'}">
-                <h6>À PROPOS</h6>
+                <h6 data-i18n="about" class="translation"></h6>
                 <h3>${data.title}</h3>
                 <p>${data.description}</p>
                 <a href="${data.button.link}" class="readmore stretched-link">
@@ -110,21 +113,23 @@ function drawPropos(data){
     parentPropos.appendChild(el)
 }
 
-function getPropos(){
-    get("public/about/propos.json", res => {
-        if(!res) return 
+function getPropos() {
+    const selectedLanguage = localStorage.getItem("selectedLanguage") || "fr"
+    get(`public/about/${selectedLanguage}/propos.json`, res => {
+        if (!res) return
         res.forEach(item => (drawPropos(item)))
     })
 }
 
-function drawInfoBanner(data){
+function drawInfoBanner(data) {
     titleBanner.innerText = data.title
     descriptionBanner.innerText = data.description
 }
 
-function getInfoBanner(){
-    get("public/about/banner.json", res => {
-        if(!res) return 
+function getInfoBanner() {
+    const selectedLanguage = localStorage.getItem("selectedLanguage") || "fr"
+    get(`public/about/${selectedLanguage}/banner.json`, res => {
+        if (!res) return
         drawInfoBanner(res)
     })
 }

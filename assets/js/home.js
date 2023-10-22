@@ -21,11 +21,11 @@ function drawCiaudFeed() {
 }
 
 function chartMap() {
-    get("public/home/map.json", (res) => {
-        if(!res) return
-        console.log({res})
+    get("public/home/map.json?v=2", (res) => {
+        if (!res) return
+        console.log({ res })
 
-        
+
         Object.values(res.leyends && typeof res.leyends == "object" ? res.leyends : {}).forEach(leyend => {
             let dom = document.createElement("div")
 
@@ -39,13 +39,13 @@ function chartMap() {
         })
 
         am5.ready(function () {
-    
+
             var root = am5.Root.new("chartMap");
-    
+
             root.setThemes([
                 am5themes_Animated.new(root)
             ]);
-    
+
             var chart = root.container.children.push(am5map.MapChart.new(root, {
                 // panX: "rotateX",
                 axis: 'horizontal',
@@ -55,7 +55,7 @@ function chartMap() {
             }));
 
             // chart.ctx.canvas.removeEventListener('wheel', chart._wheelHandler);
-    
+
             var polygonSeries = chart.series.push(
                 am5map.MapPolygonSeries.new(root, {
                     geoJSON: am5geodata_worldLow,
@@ -66,15 +66,15 @@ function chartMap() {
                     wheelable: true
                 })
             );
-    
+
             var polygonTemplate = polygonSeries.mapPolygons.template;
             polygonTemplate.setAll({
                 tooltipText: "{name}",
                 templateField: "polygonSettings",
                 wheelable: false
             });
-            
-            if(Array.isArray(res.data) && res.leyends){
+
+            if (Array.isArray(res.data) && res.leyends) {
                 polygonSeries.data.setAll(res.data.map(item => ({
                     ...item,
                     polygonSettings: res.leyends && res.leyends[item.leyend] ? {
@@ -83,7 +83,7 @@ function chartMap() {
                 })))
             }
 
-            
+
             chart.appear(1000, 100);
         });
     })

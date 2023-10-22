@@ -1,0 +1,139 @@
+{
+  "coutries": {
+    "mali": {
+      "title": "Mali",
+      "adresse": "Hamdallaye ACI 2000, Bamako Porte 12820, Rue 318",
+      "email": "ciaud-mali@ciaud.ca",
+      "aggreement_year": 2019,
+      "start_year": 2019,
+      "bloglink": "https://blog.ciaud.ca/tagged/mali",
+      "description": "Le bureau du CIAUD au Mali a obtenu son agrément et a démarré ses activités en 2019."
+    },
+    "guinee":{
+      "title": "Guinée",
+      "adresse": "(À venir)",
+      "email": "ciaud-guinee@ciaud.ca",
+      "aggreement_year": 2017,
+      "start_year": 2017,
+      "bloglink": "https://blog.ciaud.ca/tagged/guinee",
+      "description": "Le bureau du CIAUD en Guinée a obtenu son agrément et a démarré ses activités en 2017."
+    },
+    "niger": {
+      "title": "Niger",
+      "adresse": "Yantala,Pavé Recasement, Niamey, Niger",
+      "email": "ciaud-niger@ciaud.ca",
+      "aggreement_year": 2018,
+      "start_year": 2018,
+      "bloglink": "https://blog.ciaud.ca/tagged/niger",
+      "description": "Le bureau du CIAUD au Niger a obtenu son agrément et a démarré ses activités en 2018."
+    },
+    "burkina-faso": {
+      "title": "Burkina Faso",
+      "adresse": "477, Route Monuments des Martyrs Ouaga 2000, Ouagadougou, Burkina Faso",
+      "email": "burkina.faso@ciaud.ca",
+      "aggreement_year": 2019,
+      "start_year": 2021,
+      "bloglink": "https://blog.ciaud.ca/tagged/burkina-faso",
+      "description": "Le bureau du CIAUD au Burkina Faso a obtenu son agrément en 2019 et a démarré ses activités en 2021."
+    },
+    "cote-ivoire": {
+      "title": "Côte d'Ivoire",
+      "adresse": "Commune de Cocody, Akouedo Lot 30, Abidjan",
+      "email": "ciaud-ci@ciaud.ca",
+      "aggreement_year": 2022,
+      "start_year": 2022,
+      "bloglink": "https://blog.ciaud.ca/tagged/côte-divoire",
+      "description": "Le bureau CIAUD en Côte d'Ivoire a obtenu son agrément et a démarré ses activités en 2022."
+    },
+    "rdc": {
+      "title": "RDC",
+      "adresse": "Bureau n° 10, 18 Bis,Avenue Marinel,Lemira C/Gombe, Kinshasa",
+      "email": "ciaud-rdc@ciaud.ca",
+      "aggreement_year": 2015,
+      "start_year": 2015,
+      "bloglink": "https://blog.ciaud.ca/tagged/rdc",
+      "description": "Le bureau du CIAUD en RDC a obtenu son agrément et a démarré ses activités en 2015."
+    },
+    "tchad": {
+      "title": "Tchad",
+      "adresse": "Quartier Hilélé Rogué Klémat, Ndjamena –Tchad",
+      "email": "ciaud-tchad@ciaud.ca",
+      "aggreement_year": 2021,
+      "start_year": 2023,
+      "bloglink": "https://blog.ciaud.ca/tagged/tchad",
+      "description": "Le bureau du CIAUD au Tchad a obtenu son agrément en 2021 et a démarré ses activités en 2023."
+    },
+    "djibouti": {
+      "title": "Djibouti",
+      "adresse": "Heron Extension, lot 21, Djibouti",
+      "email": "ciaud-djibouti@ciaud.ca",
+      "aggreement_year": 2022,
+      "start_year": 2022,
+      "bloglink": "https://blog.ciaud.ca/tagged/djibouti",
+      "description": "Le bureau du CIAUD à Djibouti a obtenu son agrément et a démarré ses activités en 2022."
+    },
+    "somalie": {
+      "title": "Somalia",
+      "adresse": "1st August, Gurea Road Garowe, Puntland",
+      "email": "ciaud-somalie@ciaud.ca",
+      "aggreement_year": 2022,
+      "start_year": 2023,
+      "bloglink": "https://blog.ciaud.ca/tagged/somalia",
+      "description": "Le bureau du CIAUD en Somalie a obtenu son agrément en 2022 et a démarré ses activités en 2023."
+    },
+    "cameroun": {
+      "title": "Cameroun",
+      "adresse": "(À venir)",
+      "email": "ciaud-cameroun@ciaud.ca",
+      "aggreement_year": 2021,
+      "start_year": 2023,
+      "bloglink": "https://blog.ciaud.ca/tagged/cameroun",
+      "description": "Le bureau du CIAUD au Cameroun a obtenu son autorisation et a démarré ses activités en 2023."
+    },
+    "togo": {
+      "title": "Togo",
+      "adresse": "Lomé, 192 Rue Alakoyo, Tokoin Hopital",
+      "email": "ciaud-togo@ciaud.ca",
+      "aggreement_year": 2023,
+      "start_year": 2023,
+      "bloglink": "https://blog.ciaud.ca/tagged/togo",
+      "description": "Le bureau du CIAUD au Togo a obtenu son autorisation et a démarré ses activités en 2023."
+    },
+    "ghana": {
+      "title": "Ghana",
+      "adresse": "Jupiter road, Community 14 annex, Tema, Greater Accra, Ghana",
+      "email": "ciaud-ghana@ciaud.ca",
+      "aggreement_year": 2023,
+      "start_year": 2023,
+      "bloglink": "https://blog.ciaud.ca/tagged/ghana",
+      "description": "Le bureau du CIAUD au Ghana a obtenu son autorisation en 2023."
+    },
+    "kenya": {
+      "title": "Kenya",
+      "adresse": "P. O. Box 45-00517, Nrb.",
+      "email": "ciaud-kenya@ciaud.ca",
+      "aggreement_year": 2023,
+      "start_year": 2023,
+      "bloglink": "https://blog.ciaud.ca/tagged/kenya",
+      "description": "Le bureau du CIAUD au Kenya a obtenu son agrément en 2023."
+    },
+    "nigeria": {
+      "title": "Nigeria",
+      "adresse": "17, Sanya Street, Surulere, Nigeria",
+      "email": "ciaud-nigeria@ciaud.ca",
+      "aggreement_year": 2023,
+      "start_year": 2023,
+      "bloglink": "https://blog.ciaud.ca/tagged/nigeria",
+      "description": "Le bureau du CIAUD au Nigeria a obtenu son agrément en 2023."
+    },
+    "south-sudan": {
+      "title": "Soudan du Sud",
+      "adresse": "Martyrs Street, Plot 41 B Juba, South Sudan",
+      "email": "ciaud-south-sudan@ciaud.ca",
+      "aggreement_year": 2023,
+      "start_year": 2023,
+      "bloglink": "https://blog.ciaud.ca/tagged/south-sudan",
+      "description": "Le bureau du CIAUD au Soudan du Sud a obtenu son agrément en 2023."
+    }
+  }
+}

@@ -1,0 +1,26 @@
+[
+  {
+    "title": "Mission",
+    "image": "assets/img/about.webp",
+    "position": "left",
+    "description": "The International Committee for Relief and Development's mission is to provide humanitarian assistance in crisis situations, including famine, disaster, natural disasters, armed conflicts and contribute to community development in developing countries in order to help people gain their own autonomy.",
+    "button": {
+      "title": "Organizational Structure",
+      "link": "#"
+    },
+    "items": [
+      "Humanitarian assistance in crisis situations.",
+      "Communautary development."
+    ]
+  },
+  {
+    "title": "Values",
+    "image": "assets/img/about/pexels-roger-sekoua-1813914-2048x1400.webp",
+    "position": "right",
+    "description": "Our values and our philosophy reflect our commitment to communities through a PARTNERSHIP that makes them the masters of their own recovery and development. This principle is at the heart of each of our decisions. Thus , at CIAUD, we consider ourselves, as an organization and as individuals, responsible for everything we do to continue to deserve the trust received.",
+    "button": {
+      "title": "Read more",
+      "link": "#"
+    }
+  }
+]

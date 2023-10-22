@@ -1,28 +1,23 @@
-function includeHTML() {
-    let z, i, elmnt, file, xhttp;
-    z = document.getElementsByTagName("*");
+async function includeHTML() {
+  const elements = document.querySelectorAll('[include-html]');
 
-    for (i = 0; i < z.length; i++) {
+  const promises = Array.from(elements).map(async (element) => {
+    const file = element.getAttribute('include-html');
 
-      elmnt = z[i];
-      file = elmnt.getAttribute("include-html");
-
-      if (file) {
-        xhttp = new XMLHttpRequest();
-        xhttp.onreadystatechange = function() {
-          if (this.readyState == 4) {
-
-            if (this.status == 200) {elmnt.innerHTML = this.responseText;}
-            if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
-            elmnt.removeAttribute("include-html");
-            includeHTML();
-
-          }
-        }
-
-        xhttp.open("GET", file, true);
-        xhttp.send();
-        return;
+    try {
+      const response = await fetch(file);
+      if (response.ok) {
+        const text = await response.text();
+        element.innerHTML = text;
+      } else {
+        element.innerHTML = 'Page not found.';
       }
+    } catch (error) {
+      console.error('Error fetching include-html file:', error);
+    } finally {
+      element.removeAttribute('include-html');
     }
-  }
+  });
+
+  await Promise.all(promises);
+}

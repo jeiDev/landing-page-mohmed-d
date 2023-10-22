@@ -5,7 +5,7 @@
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
     <title>
-      À propos – Comité International pour l'Aide d'Urgence et le Développement
+      À propos | About – CIAUD 
     </title>
     <meta content="" name="description" />
     <meta content="" name="keywords" />
@@ -89,8 +89,8 @@
         <nav>
           <div class="container">
             <ol>
-              <li><a href="index.html">Accueil</a></li>
-              <li>À propos</li>
+              <li><a href="index.html" data-i18n="home" class="translation"></a></li>
+              <li data-i18n="about" class="translation"></li>
             </ol>
           </div>
         </nav>
@@ -105,8 +105,8 @@
       <section id="team" class="team pt-0">
         <div class="container">
           <div class="section-header">
-            <h6>NOS ADMINISTRATEURS</h6>
-            <h2>Rencontrez les membres du comité d'administration</h2>
+            <h6 data-i18n="our-administrators" class="translation"></h6>
+            <h2 data-i18n="our-administrators-desc" class="translation"></h2>
           </div>
 
           <div class="row" data-aos-delay="100" id="team-main"></div>
@@ -138,6 +138,11 @@
       class="scroll-top d-flex align-items-center justify-content-center"
       ><i class="bi bi-arrow-up-short"></i
     ></a>
+    
+    <!-- i18n JS Files -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/i18next/23.5.0/i18next.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/i18next-http-backend/2.2.2/i18nextHttpBackend.min.js"></script>
+    <script src="assets/js/translator.js"></script>
 
     <!-- Vendor JS Files -->
     <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -153,9 +158,5 @@
     <script src="assets/js/includeHTML.js"></script>
     <script src="assets/js/about.js"></script>
     <script src="assets/js/global.js"></script>
-    <script
-      type="text/javascript"
-      src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
-    ></script>
   </body>
 </html>

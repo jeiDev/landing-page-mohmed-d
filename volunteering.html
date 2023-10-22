@@ -5,7 +5,7 @@
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 
     <title>
-      Bénévolat – Comité International pour l'Aide d'Urgence et le Développement
+      Bénévolat | Volunteering – CIAUD
     </title>
     <meta content="" name="description" />
     <meta content="" name="keywords" />
@@ -117,8 +117,8 @@
         <nav>
           <div class="container">
             <ol>
-              <li><a href="index.html">Accueil</a></li>
-              <li>Bénévolat</li>
+              <li><a href="index.html" data-i18n="home" class="translation"></a></li>
+              <li data-i18n="volunteering" class="translation">Bénévolat</li>
             </ol>
           </div>
         </nav>
@@ -162,6 +162,11 @@
       class="scroll-top d-flex align-items-center justify-content-center"
       ><i class="bi bi-arrow-up-short"></i
     ></a>
+    
+    <!-- i18n JS Files -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/i18next/23.5.0/i18next.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/i18next-http-backend/2.2.2/i18nextHttpBackend.min.js"></script>
+    <script src="assets/js/translator.js"></script>
 
     <!-- Vendor JS Files -->
     <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -177,9 +182,5 @@
     <script src="assets/js/includeHTML.js"></script>
     <script src="assets/js/volunteering.js"></script>
     <script src="assets/js/global.js"></script>
-    <script
-      type="text/javascript"
-      src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
-    ></script>
   </body>
 </html>

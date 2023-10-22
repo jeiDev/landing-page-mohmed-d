@@ -1,0 +1,62 @@
+[
+  {
+    "name": "Dr. Mahamadou TOURÉ",
+    "headline": "CEO",
+    "image": "assets/img/team/01.webp",
+    "description": "",
+    "socials": [
+      { "type": "twitter", "link": "#" },
+      { "type": "facebook", "link": "#" },
+      { "type": "instagram", "link": "#" },
+      { "type": "linkedin", "link": "#" }
+    ]
+  },
+  {
+    "name": "Aimé MALONGA",
+    "headline": "Administrator",
+    "image": "assets/img/team/02.webp",
+    "description": "",
+    "socials": [
+      { "type": "twitter", "link": "#" },
+      { "type": "facebook", "link": "#" },
+      { "type": "instagram", "link": "#" },
+      { "type": "linkedin", "link": "#" }
+    ]
+  },
+  {
+    "name": "Daniel DEMERS",
+    "headline": "Administrator",
+    "image": "assets/img/team/03.webp",
+    "description": "",
+    "socials": [
+      { "type": "twitter", "link": "#" },
+      { "type": "facebook", "link": "#" },
+      { "type": "instagram", "link": "#" },
+      { "type": "linkedin", "link": "#" }
+    ]
+  },
+  {
+    "name": "Ibrahima COLY",
+    "headline": "Administrator",
+    "image": "assets/img/team/04.webp",
+    "description": "",
+    "socials": [
+      { "type": "twitter", "link": "#" },
+      { "type": "facebook", "link": "#" },
+      { "type": "instagram", "link": "#" },
+      { "type": "linkedin", "link": "#" }
+    ]
+  },
+  {
+    "name": "Aichatou TOURÉ",
+    "headline": "Administrator",
+    "image": "assets/img/team/05.webp",
+    "description": "",
+    "socials": [
+      { "type": "twitter", "link": "#" },
+      { "type": "facebook", "link": "#" },
+      { "type": "instagram", "link": "#" },
+      { "type": "linkedin", "link": "#" }
+    ]
+  }
+]
